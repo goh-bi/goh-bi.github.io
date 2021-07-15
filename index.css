@@ -6,6 +6,8 @@ header{
 	display: inline-flex;
 	list-style: none;
 	padding: 100px;
+	border: 20px solid red;
+margin-bottom: 20px;
 }
 h2{
 text-align: center;
