@@ -1,0 +1,12 @@
+header{
+	color: white;
+	background: #2c3e50;
+}
+.pres{
+	display: inline-flex;
+	list-style: none;
+	padding: 100px;
+}
+h2{
+text-align: center;
+}
