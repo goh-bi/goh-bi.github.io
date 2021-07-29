@@ -1,0 +1,9 @@
+@media all screen and(max-width: 768px)
+{
+	ul{
+		margin-left: 150%;
+	}
+	body{
+		background-color: green;
+	}
+}
