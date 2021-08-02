@@ -3,20 +3,57 @@ header{
 	background: #2c3e50;
 	display: inline-flex ;
 	width: 100%;
+	text-align: justify-all;
 }
 .pres{
 	display: inline-flex;
 	list-style: none;
-	padding: 5px;
-/*margin-bottom: 15px;*/
+	padding-top: -10px;
+	margin: 20px;
+	margin-left: 100px;
 
 }
+h2{
+	padding-top: 12px;}
+.header_botton{
+	padding-bottom: 30px;
+	background:#228B22 ;
+	width: 100%;
+}
+
+section{
+	display: flex;
+	width: 100%;
+	justify-content: center;}
+.portefeuille{
+	text-align: center;}
 
 div{
-	display: inline-flex;
-	width: 100%;
-	
+	margin: 75px;
+	border: 2px solid none;
+	padding: 30px;
+
 }
-.image{
-	margin: 30px;
+.imag1{
+	background: #000000;
 }
+.imag2{
+	background: #A52A2A;}
+
+
+#mais{
+	border: 1px solid green;
+	padding-top: 135px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	border-radius: 80px;
+	background: green;
+}
+.imag3{
+	background:#228B22;}
+img{
+	border-radius: 80px;
+}
+
+
