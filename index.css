@@ -3,44 +3,39 @@ header{
 	background: #2c3e50;
 	display: inline-flex ;
 	width: 100%;
-	text-align: justify-all;
-}
+	text-align: justify-all;}
 .pres{
 	display: inline-flex;
 	list-style: none;
 	padding-top: -10px;
 	margin: 20px;
-	margin-left: 100px;
-
-}
+	margin-left: 150px;}
 h2{
 	padding-top: 12px;}
 .header_botton{
 	padding-bottom: 30px;
 	background:#228B22 ;
+	width: 100%;}
+span{display:inline-flex;
 	width: 100%;
-}
-
+	justify-content: center;}
 section{
-	display: flex;
+	display:inline-flex;
 	width: 100%;
+	margin-right: 2px;
 	justify-content: center;}
 .portefeuille{
 	text-align: center;}
-
 div{
 	margin: 75px;
 	border: 2px solid none;
-	padding: 30px;
-
-}
+	padding: 30px;}
 .imag1{
 	background: #000000;
-}
+	/*height: 210px;
+	width: 214px;}*/}
 .imag2{
 	background: #A52A2A;}
-
-
 #mais{
 	border: 1px solid green;
 	padding-top: 135px;
@@ -48,12 +43,22 @@ div{
 	padding-right: 10px;
 	padding-bottom: 10px;
 	border-radius: 80px;
-	background: green;
-}
+	background: green;}
 .imag3{
 	background:#228B22;}
 img{
-	border-radius: 80px;
-}
+	border-radius: 80px;}
+footer{
+	background: #2c3e50;
+	display: inline-flex ;
+	width: 100%;
+	text-align: justify-all;
+	color: white;}
+.foot{
+	margin: 0px 0px 0px 200px;
+	border: 1px solid none;
+	padding: 0px 10px 0px 10px;
+	text-align: justify;}
+
 
 
