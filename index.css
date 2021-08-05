@@ -45,7 +45,9 @@ div{
 	border-radius: 80px;
 	background: green;}
 .imag3{
-	background:#228B22;}
+	background:#228B22;
+	text-align: center;
+	padding: 10px;}
 img{
 	border-radius: 80px;}
 footer{
