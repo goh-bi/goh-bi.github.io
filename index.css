@@ -26,19 +26,35 @@ section{
 	justify-content: center;}
 .portefeuille{
 	text-align: center;}
+.etoile{
+	font-size: 50px;
+}
 div{
-	margin: 75px;
+	margin: 20px 75px 20px 75px;
 	border: 2px solid none;
-	padding: 30px;}
+	padding: 30px;
+	border-radius: 50px;}
 .imag1{
 	background: #000000;
 	/*height: 210px;
 	width: 214px;}*/}
+.grand1:hover {
+	width: 214px;
+	height: 210px;
+	transition: 0.5s;}
+.grand2:hover {
+	width: 214px;
+	height: 210px;
+	transition: 0.5s;}
+.grand3:hover {
+	width: 214px;
+	height: 210px;
+	transition: 0.5s;}
 .imag2{
 	background: #A52A2A;}
 #mais{
 	border: 1px solid green;
-	padding-top: 135px;
+	padding-top: 90px;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 10px;
@@ -62,6 +78,34 @@ footer{
 	border: 1px solid none;
 	padding: 0px 10px 0px 10px;
 	text-align: justify;}
+.foot0{
+	justify-content: space-between;
+}
+.foot1{
+	border: 1px solid white;
+	border-radius: 200px;
+	padding: 10px;
+	margin-right: 5px;
+	color: white;
+	text-decoration: none;}
+.wa:hover{
+	color: white;
+	background: #90FF09;
+	transition: 1s;}
+.in:hover{
+	color: white;
+	background: linear-gradient(blue,white);
+	transition: 1s;}
+.tw:hover{
+	color: white;
+	background: #191970;
+	transition: 1s;}
+.fb:hover{
+	color: white;
+	background: #196BFF;
+	transition: 1s;}
+
+
 
 
 
