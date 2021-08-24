@@ -19,18 +19,23 @@ h2{
 span{display:inline-flex;
 	width: 100%;
 	justify-content: center;}
-section{
-	display:inline-flex;
-	grid-gap: 2px;
+body{
 	width: 100%;
+}
+section{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+	grid-gap: 2px;
 	margin-right: 2px;
-	justify-content: center;}
+	justify-content: center;
+	/*width: 100%;*/}
 .portefeuille{
 	text-align: center;}
 .etoile{
-	font-size: 50px;}
+	font-size: 50px;
+}
 div{
-	margin: 20px 75px 20px 75px;
+	/*margin: 20px 75px 20px 75px;*/
 	border: 2px solid none;
 	padding: 30px;
 	border-radius: 50px;}
@@ -69,7 +74,10 @@ img{
 	border-radius: 80px;}
 footer{
 	background: #2c3e50;
-	display: inline-flex ;
+	display: grid;
+ 	grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+	grid-gap: 2px;
+	/*display: inline-flex ;*/
 	width: 100%;
 	text-align: justify-all;
 	color: white;}
@@ -79,15 +87,31 @@ footer{
 	padding: 0px 10px 0px 10px;
 	text-align: justify;}
 .foot0{
-	justify-content: space-between;
-}
+	justify-content: space-between;}
+.foot0 a{
+	margin-left: 1px;
+	padding: 5px;}
+.autour{
+	padding:5px;
+	padding-left: 40px;
+	padding-right: 40px;}
+.autour h3{
+	margin-left: -3rem;}
+.autour ul{
+	display: inline-flex;
+	list-style-type: none;
+	margin-left: -3rem;}
+
 .foot1{
 	border: 1px solid white;
 	border-radius: 200px;
 	padding: 10px;
 	margin-right: 5px;
+	margin-top: 40px;
 	color: white;
 	text-decoration: none;}
+.fb{
+	margin-bottom: 1rem;}
 .wa:hover{
 	color: white;
 	background: #90FF09;
@@ -106,6 +130,33 @@ footer{
 	transition: 5s;
   	text-transform: uppercase;
   	transform: skew(10deg);}
+ @media screen and (max-width: 768px){
+ 	body{ background: red; }}
+ @media screen and (max-width: 768px){
+ 	footer{	/*display: grid;
+ 			grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+			grid-gap: 2px;*/
+			width: 170%;}}
+/*@media screen and (max-width: 1024px){
+	.foot1{margin-top: 30px;}}*/
+@media screen and (max-width: 768px){
+	.autour ul{ flex-direction: column;
+				padding-bottom: 40px; 
+				boder: 1px solid red;}}
+@media screen and (max-width: 350px){
+	footer{ width: 100%; }
+	header{ width: 150%; }
+	}
+@media screen and (min-width: 240px and max-width: 775px){
+	header{ width: 300%; }
+	}
+/*@media screen and (max-width: 350px){
+	header{ width: 150%; }*/
+	}
+
+
+
+
 
 
 
