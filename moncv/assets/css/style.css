@@ -18,7 +18,7 @@
 }
 html{
     font-size: 62.5%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 body{
     background: var(--gray);
@@ -57,7 +57,7 @@ section{
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-flow: column;  
+    flex-flow: wrap;  
 }
 
 /* header */
@@ -101,10 +101,9 @@ header{
 }
 .navbar ul{
     list-style: none;
-   /* text-align: center;
+   text-align: center;
     align-items: center;
-    justify-content: center;*/
-    position: fixed;
+    justify-content: center;
 }
 .navbar ul li{
     background: var(--gray);
@@ -115,6 +114,7 @@ header{
     width: 25rem;
     border-radius: 3rem;
     font-size: 1.5rem;
+    align-items: center;
 }
 .navbar ul li:hover{
     background: var(--goldenrod);
@@ -145,6 +145,7 @@ header{
     padding-bottom: 10rem;
     margin-top: 2rem;
     /* padding: 25rem 0 30rem  0 ; */
+
 
 }
 .home p{
@@ -201,7 +202,7 @@ header{
 
 .portfolio{
     /* margin-top:28rem; */
-    padding: 22rem;
+    padding: 1rem;
 }
 hr{
     margin-bottom: 4rem;
@@ -335,11 +336,19 @@ hr{
     }
  }
 
+@media screen and (max-width:510px){
+    header{
+        width: 100%;
+    }
+    header .navbar li{
+        align-items: center;
+        text-align: center;
+        font-size: 2.8rem;
+        margin-left: 1rem;
 
-
-/* @media screen and (max-width:320px){
+    }
     
-} */
+} 
 @media screen and (max-width:240px) {
     header{
         width: 100%;
