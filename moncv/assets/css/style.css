@@ -75,6 +75,9 @@ header{
    align-items: center;
    transition-duration: .2s;
 }
+.media{
+    font-size: x-large;
+}
 .user{
     margin-top: 8rem;
 }
@@ -97,9 +100,9 @@ header{
     margin-bottom: -1rem;
 }
 .navbar {
-    width: 100%;
+    width: 85%;
 }
-.navbar ul{
+.navbar ul div{
     list-style: none;
    text-align: center;
     align-items: center;
@@ -344,9 +347,10 @@ hr{
         align-items: center;
         text-align: center;
         font-size: 2.8rem;
-        margin-left: 1rem;
+        /* margin-left: 1rem; */
 
     }
+
     
 } 
 @media screen and (max-width:240px) {
