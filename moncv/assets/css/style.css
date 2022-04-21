@@ -12,6 +12,10 @@
     background: var(--goldenrod);
     color: var(--white);
 }
+*{
+    text-align: center;
+    align-items: center;
+}
 html{
     font-size: 62.5%;
 }
@@ -248,9 +252,46 @@ hr{
     padding-right: 10px;  
 }
 
+/* section eduction */
+.education aside{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    margin-left:2rem ;
+}
+.education .boite {
+    border-left: solid .3rem var(--white) ;
+    width: 17rem;
+    height: 15rem;
+    margin:1.5rem ;
+    padding: 2rem;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+}
+.education i{
+    transform: translate(-13rem, -3rem );
+   position: absolute;
+    z-index: 100;
+    font-size: x-large;
+    color: var(--black);
+    background: var(--goldenrod);
+    border-radius: 50%;
+    padding: 1rem;    
+}
+.education h4{
+    background: var(--dimgray);
+    border: solid 0.1rem red;
+    width: 5rem;
+    text-align: center;
+    align-items: center;
+    margin-left: 5rem;
+    
+}
 
 
 
+
+/* media query */
 @media screen and (max-width: 1344px) {
     section{
         margin-left: 300px;    
@@ -282,12 +323,17 @@ hr{
     html{
         font: 50%;
     }
+    section{
+        margin-left: 6rem;
+    }
     .navbar ul li{
         padding: .7rem 0rem;
         margin: .7rem 0;    
     }
- 
-}
+ }
+
+
+
 /* @media screen and (max-width:320px){
     
 } */
