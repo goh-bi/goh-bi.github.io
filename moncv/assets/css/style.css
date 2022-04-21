@@ -284,12 +284,15 @@ hr{
     }
     .navbar ul li{
         padding: .7rem 0rem;
-        margin: .7rem 0;
-        
-    } 
+        margin: .7rem 0;    
+    }
+ 
 }
-@media screen and (min-width:240px) {
-    .header{
+/* @media screen and (max-width:320px){
+    
+} */
+@media screen and (max-width:240px) {
+    header{
         width: 100%;
     }
     .navbar ul li{
