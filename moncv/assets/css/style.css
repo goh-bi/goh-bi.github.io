@@ -18,8 +18,17 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
+
     /* overflow-x: hidden; */
 }
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--goldenrod);
+}
+
 body{
     background: var(--gray);
     color: var(--white);
@@ -112,7 +121,7 @@ header{
     background: var(--gray);
     color: var(--white);
     padding: .7rem .7rem;
-    margin: .7rem .5rem;
+    margin: .7rem 0 .2rem .9rem;
     text-align: center;
     width: 25rem;
     border-radius: 3rem;
@@ -130,9 +139,9 @@ header{
     position:fixed;
     top: 2rem;
     right: 2rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     background: var(--dimgray);
-    padding:.6rem;
+    padding:.9rem;
     border-radius: 20%;
     display: none;
     z-index: 10000;
@@ -296,8 +305,6 @@ hr{
 }
 
 
-
-
 /* media query */
 @media screen and (max-width: 1344px) {
     section{
@@ -305,7 +312,15 @@ hr{
     }
 }
 
-    
+@media screen and (max-width:1150px) {
+    .about aside{
+        flex-flow: wrap;     
+    }
+    .about aside .expe{
+        margin-top: 8rem;
+    }
+}
+
 
 @media screen and (max-width:991px) {
     /* html{
@@ -333,10 +348,13 @@ hr{
     section{
         margin-left: 6rem;
     }
-    .navbar ul li{
+    ul {
+        margin-left: -4.5rem;
+    }
+    /* .navbar ul li{
         padding: .7rem 0rem;
         margin: .7rem 0;    
-    }
+    } */
  }
 
 @media screen and (max-width:510px){
@@ -347,12 +365,28 @@ hr{
         align-items: center;
         text-align: center;
         font-size: 2.8rem;
-        /* margin-left: 1rem; */
-
     }
-
     
-} 
+    .portfolio div{
+        margin-left: 1rem;
+        width: 11rem;
+        height: 11rem;
+    }
+    .portfolio aside figcaption{
+        margin-left: -2.5rem;
+    }
+    .portfolio div img{
+        width: 11rem;
+        /* overflow: hidden; */
+        height: 10rem;
+    }
+    .about .expe .boite{
+        margin-left: -4rem;
+        width: 20rem;
+        height: 10rem;
+    }   
+}
+
 @media screen and (max-width:240px) {
     header{
         width: 100%;
@@ -363,15 +397,6 @@ hr{
         text-align: center;
         width: 18rem;
     }    
-}
-@media screen and (max-width:1150px) {
-    .about aside{
-        flex-flow: wrap;     
-    }
-    .about aside .expe{
-        margin-top: 8rem;
-    }
-
 }
 
 
