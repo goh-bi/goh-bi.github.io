@@ -18,6 +18,7 @@
 }
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 body{
     background: var(--gray);
@@ -280,11 +281,13 @@ hr{
 }
 .education h4{
     background: var(--dimgray);
-    border: solid 0.1rem red;
+    border-radius: 40%;
     width: 5rem;
     text-align: center;
     align-items: center;
     margin-left: 5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     
 }
 
