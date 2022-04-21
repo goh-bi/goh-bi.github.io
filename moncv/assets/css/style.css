@@ -1,0 +1,312 @@
+/*font-family:  roboto et tangerine*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,100;1,300&family=Tangerine:wght@400;700&display=swap');
+:root{
+    --white:#fff;
+    --black:#000;
+    --gray:#333;
+    --dimgray:#696969;
+    --goldenrod:#daa520;
+}
+::selection{
+    background: var(--goldenrod);
+    color: var(--white);
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: var(--gray);
+    color: var(--white);
+}
+.title{
+    font-size: 3.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+span {
+    color: var(--goldenrod);
+}
+.heading{
+    font-size: 4rem;
+}
+.heading span{
+    color: var(--goldenrod);
+}
+.btn{
+   font-size: 1.5rem;
+   border-radius: 30px;
+   padding: .5rem 1rem;
+   border: solid 2px var(--goldenrod);
+   background: var(--dimgray); 
+   color: var(--white);
+   width: auto;
+}
+.btn:hover{
+    cursor: pointer;
+}
+section{
+    margin-left: 20%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;  
+}
+
+/* header */
+header{
+    background: var(--black);
+    width: 33rem;
+    height: 100%;
+    text-align: center ;
+    position: fixed;
+    z-index: 1000;
+    top: 0rem;
+   left: 0;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   transition-duration: .2s;
+}
+.user{
+    margin-top: 8rem;
+}
+.user img{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    border: solid .4rem var(--goldenrod);
+}
+.user h1{
+    font-size: 2rem;
+    font-family:'Roboto', sans-serif;
+    font-weight:900;
+}   
+.user p{
+    font-size: 3rem;
+    font-family: 'Tangerine', cursive;
+    text-transform: lowercase;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+}
+.navbar {
+    width: 100%;
+}
+.navbar ul{
+    list-style: none;
+   /* text-align: center;
+    align-items: center;
+    justify-content: center;*/
+    position: fixed;
+}
+.navbar ul li{
+    background: var(--gray);
+    color: var(--white);
+    padding: .7rem .7rem;
+    margin: .7rem .5rem;
+    text-align: center;
+    width: 25rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+}
+.navbar ul li:hover{
+    background: var(--goldenrod);
+}
+.navbar ul a{
+    text-decoration: none;
+}
+#icone{
+    color: var(--white);
+    position:fixed;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    background: var(--dimgray);
+    padding:.6rem;
+    border-radius: 20%;
+    display: none;
+    z-index: 10000;
+}
+
+/* section home */
+.home{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 10rem;
+    margin-top: 2rem;
+    /* padding: 25rem 0 30rem  0 ; */
+
+}
+.home p{
+    font-size: 3rem;
+}
+
+
+/* section about */
+.about{
+    width: 90%;
+    padding-top: 10rem;
+}
+
+
+.about aside{
+    display: flex;
+    font-size:2rem;
+    justify-content: space-between;
+    margin: 5%;
+    align-items: center;  
+}
+.about .nom{
+    width: 60rem;
+}
+.about .nom span{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.about .nom .btn span{
+    color: var(--white);
+}
+.about .expe{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    flex-wrap: wrap;
+}
+.about .expe .boite {
+    border: dotted .18rem var(--goldenrod) ;
+    width: 12rem;
+    height: 10rem;
+    margin:1rem ;
+    padding: 2rem;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background: var(--black);
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+}
+.about .expe .boite span{
+    font-size: 3rem;
+}
+/* section portfolio */
+
+.portfolio{
+    /* margin-top:28rem; */
+    padding: 22rem;
+}
+hr{
+    margin-bottom: 4rem;
+}
+.portfolio aside{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+.portfolio div{
+    border-top: solid .2rem var(--goldenrod);
+    border-bottom: solid .2rem var(--white);
+    border-radius: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    width: 15rem;
+    overflow: hidden;
+    height: 15rem;
+    background: linear-gradient(to left, var(--goldenrod), yellow);
+}
+.portfolio div img{
+    width: 15rem;
+    /* overflow: hidden; */
+    height: 20rem;
+    transition: all .5s;
+    object-fit: cover;
+    margin-left: -4rem;
+
+}
+.portfolio div img:hover{
+    transform: scale(1.5);
+    z-index: 50;
+}
+.portfolio div:hover figcaption{
+    transform: translateY(-22px);
+    transition: 0.3s;
+}
+.portfolio a{
+    text-decoration: none;  
+}
+.portfolio figcaption{
+    color: var(--white);
+    font-size: 2rem;
+    z-index: 100;
+    position: absolute;
+    background: var(--goldenrod);
+    border-radius: 30%; 
+    padding-left: 10px;
+    padding-right: 10px;  
+}
+
+
+
+
+@media screen and (max-width: 1344px) {
+    section{
+        margin-left: 300px;    
+    }
+}
+
+    
+
+@media screen and (max-width:991px) {
+    /* html{
+        font-size: 75%;
+    } */
+    section{
+        margin-left: 0; 
+    }
+    #icone{
+        display: block;   
+    }
+    header{
+        /* display: none; */
+        left: -500px;
+    }
+    header.toggle{
+        /* display: block; */
+        left: 0;
+    }
+}
+@media screen and (max-width:768px){
+    html{
+        font: 50%;
+    }
+    .navbar ul li{
+        padding: .7rem 0rem;
+        margin: .7rem 0;
+        
+    } 
+}
+@media screen and (min-width:240px) {
+    .header{
+        width: 100%;
+    }
+    .navbar ul li{
+        padding: .7rem .7rem;
+        margin: .7rem .5rem;
+        text-align: center;
+        width: 18rem;
+    }    
+}
+@media screen and (max-width:1150px) {
+    .about aside{
+        flex-flow: wrap;     
+    }
+    .about aside .expe{
+        margin-top: 8rem;
+    }
+
+}
+
+
