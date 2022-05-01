@@ -1,0 +1,63 @@
+.block{
+	padding: 20px;
+	border-radius: 5px;
+	background-color: pink;
+}
+
+h1{
+	text-align: center;
+}
+
+input[type=text],
+select,
+input[type=password],
+textarea,
+input[type=email]
+{
+	width:100%;
+	padding: 12pw 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+input[type=submit]{
+	width: 100%;
+	background: green;
+	color: white;
+	margin: 8px 0;
+	padding: 13px 19px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+input[type=submit]:hover{
+	background-color: red;
+}
+.marque_table{
+	border-collapse: collapse;
+	width: 100%;
+}
+.marque_table td,
+.marque_table th{
+border: 1px solid black;
+padding: 7px;
+}
+.marque_table th{
+	background: green;
+	color: white;
+	padding-top: 11px;
+	padding-bottom: 11px;
+}
+.marque_table tr:nth-child(even) {
+	background-color: gray;
+	
+}
+.marque_table tr{
+	text-align:center ;
+}
+.marque_table tr:hover {
+	background: red;
+
+}.
+
